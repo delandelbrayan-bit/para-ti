@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#120b16">
+
+    <title>¿Cuánto conoces nuestra historia? ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================
+         FONDO
+    ======================================= -->
+
+    <div id="particulas"></div>
+
+    <div class="corazones">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
+
+
+    <!-- ======================================
+         MÚSICA
+    ======================================= -->
+
+    <audio id="musica" loop>
+        <source src="musica/cancion.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ======================================
+         PANTALLA INICIAL
+    ======================================= -->
+
+    <section id="inicio" class="pantalla">
+
+        <div class="inicio-contenido">
+
+            <div class="estrella">✦</div>
+
+            <p class="mini-titulo">
+                UNA PEQUEÑA PRUEBA PARA TI
+            </p>
+
+            <h1>
+                ¿Cuánto conoces<br>
+                <span>nuestra historia?</span>
+            </h1>
+
+            <p class="descripcion">
+                Hay algunas preguntas que solamente
+                alguien especial podría responder...
+            </p>
+
+            <div class="flor">🌷</div>
+
+            <button id="empezar">
+                Comenzar ❤️
+            </button>
+
+            <p class="aviso-musica">
+                🎵 La música comenzará al tocar el botón
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         JUEGO
+    ======================================= -->
+
+    <main id="juego" class="oculto">
+
+        <!-- CABECERA -->
+
+        <header class="cabecera">
+
+            <div class="logo">
+                <span>🌷</span>
+                Nuestra historia
+            </div>
+
+            <div class="progreso-texto">
+                <span id="numeroPregunta">1</span>/7
+            </div>
+
+        </header>
+
+
+        <!-- BARRA DE PROGRESO -->
+
+        <div class="barra-contenedor">
+
+            <div id="barraProgreso"></div>
+
+        </div>
+
+
+        <!-- TARJETA DE PREGUNTA -->
+
+        <section class="pregunta-seccion">
+
+            <div class="capitulo">
+                RECUERDO <span id="numeroCapitulo">01</span>
+            </div>
+
+            <div class="pregunta-card">
+
+                <div class="icono-pregunta" id="iconoPregunta">
+                    ❤️
+                </div>
+
+                <h2 id="pregunta">
+                    Pregunta
+                </h2>
+
+                <div id="respuestas" class="respuestas"></div>
+
+                <div id="mensajeRespuesta"
+                     class="mensaje-respuesta">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PUNTOS -->
+
+        <div class="puntos">
+
+            <span>
+                Puntos:
+            </span>
+
+            <strong id="puntuacion">
+                0
+            </strong>
+
+            ❤️
+
+        </div>
+
+    </main>
+
+
+    <!-- ======================================
+         RESULTADO
+    ======================================= -->
+
+    <section id="resultado" class="pantalla oculto">
+
+        <div class="resultado-contenido">
+
+            <div id="emojiResultado"
+                 class="emoji-resultado">
+                ❤️
+            </div>
+
+            <p class="mini-titulo">
+                TERMINASTE EL JUEGO
+            </p>
+
+            <h1 id="tituloResultado">
+                ¡Lo hiciste!
+            </h1>
+
+            <div class="resultado-puntos">
+
+                <span id="puntosFinal">
+                    0
+                </span>
+
+                <small>
+                    / 7
+                </small>
+
+            </div>
+
+            <p id="mensajeFinal"
+               class="mensaje-final">
+            </p>
+
+
+            <!-- FOTO -->
+
+            <div class="foto-resultado">
+
+                <img
+                    src="fotos/nosotros1.jpg"
+                    alt="Nuestro recuerdo">
+
+            </div>
+
+
+            <button id="sorpresaBtn">
+                🔓 Ver mi sorpresa
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         SORPRESA
+    ======================================= -->
+
+    <section id="sorpresa" class="pantalla oculto">
+
+        <div class="sorpresa-contenido">
+
+            <div class="sobre">
+
+                💌
+
+            </div>
+
+            <p class="mini-titulo">
+                UNA ÚLTIMA COSA
+            </p>
+
+            <h1>
+                Para ti...
+            </h1>
+
+            <div class="carta">
+
+                <p>
+                    Mi niña:
+                </p>
+
+                <p>
+                    Si llegaste hasta aquí significa que
+                    acabaste mi pequeño juego.
+                </p>
+
+                <p>
+                    Pero la verdad es que no quería hacer
+                    solamente un juego.
+                </p>
+
+                <p>
+                    Quería crear un pequeño lugar donde
+                    pudieras recordar algunas de las cosas
+                    que hacen especial nuestra historia.
+                </p>
+
+                <p>
+                    Desde aquel <strong>11 de abril</strong>,
+                    hay recuerdos que se quedaron conmigo.
+                </p>
+
+                <p>
+                    Y aunque solamente sean algunas fotos,
+                    algunas fechas y algunas palabras,
+                    detrás de ellas hay momentos que
+                    significan muchísimo para mí.
+                </p>
+
+                <p>
+                    Espero que podamos seguir creando
+                    muchos más recuerdos juntos.
+                </p>
+
+                <p class="firma">
+                    Te quiero mucho ❤️<br>
+                    <strong>— Yo</strong>
+                </p>
+
+            </div>
+
+
+            <!-- GALERÍA -->
+
+            <h2 class="titulo-fotos">
+                Nuestros recuerdos 📸
+            </h2>
+
+            <div class="galeria">
+
+                <div class="foto">
+                    <img src="fotos/nosotros1.jpg">
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/nosotros2.jpg">
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/nosotros3.jpg">
+                </div>
+
+            </div>
+
+
+            <!-- OJOS -->
+
+            <div class="seccion-ojos">
+
+                <h2>
+                    Y sí... también me encantan tus ojos 👀
+                </h2>
+
+                <div class="ojos">
+
+                    <img src="fotos/ojos1.jpg">
+
+                    <img src="fotos/ojos2.jpg">
+
+                </div>
+
+            </div>
+
+
+            <!-- TLACUACHE -->
+
+            <div class="tlacuache-final">
+
+                🦝
+
+                <h2>
+                    Y nunca olvidemos
+                    que quieres un tlacuache ❤️
+                </h2>
+
+            </div>
+
+
+            <!-- FINAL -->
+
+            <div class="final-mensaje">
+
+                <div class="tulipanes">
+                    🌷 🌷 🌷
+                </div>
+
+                <h2>
+                    Gracias por ser tú.
+                </h2>
+
+                <p>
+                    Y gracias por aquel 11 de abril.
+                </p>
+
+                <div class="corazon">
+                    ❤️
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
